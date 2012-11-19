@@ -1,0 +1,8 @@
+---
+page_title : Blog Archive
+layout: blog
+---
+
+{% for post in site.posts %}
+ <h2>{{post.date | date_to_string}} - <a class='no_block' href="{{post.id}}">{{post.title}}</a></h2>
+{% endfor %}

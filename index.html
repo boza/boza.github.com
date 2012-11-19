@@ -1,0 +1,137 @@
+---
+layout: default
+title: Jose Boza
+---
+
+<div class="grid_8 prefix_3">
+<!-- Home Section --> 
+  <h1 class="sifr-title">
+    Designing User Experiences, One site at a time - <em>with a smile :)</em>
+  </h1>
+</div>
+<div class="grid_4 prefix_3">
+  <a href="#"><img src="./img/recent_work.png" alt="Recently Completed Work Image" /></a>
+</div>
+<div class="grid_4">
+  <h2 class="sifr-subtitle">
+    A BIT ABOUT M
+  </h2>
+  <p>
+    This is a short paragraph about what our company does. We can include information like famous clients, or where we work from, and the services we offer, maybe even with a link to the extensive <a href="#web">web site</a> or <a href="#print">print</a> portfolio. Oh, and don’t forget an easy to reach <a href="#contactus">contact us</a> link.
+  </p>
+  <h2 class="sifr-subtitle">
+    WHAT OUR CLIENTS SAY
+  </h2>
+  <p>
+    “The studio were excellent in communicating their ideas to us. We put our trust in them, and they did not dissappoint. I would highly recommend working with this design studio.” <em>- John Johnson, CEO Johnson Corp.</em>
+  </p>
+</div>
+<div class="clear">
+  &nbsp;
+</div>
+<div class="grid_4 prefix_3">
+  <h2 class="sifr-subtitle">
+    RECENTLY COMPLETED
+  </h2>
+  <p>
+    This is an area on the landing page where you can give a brief summary on some recent work that you have completed. Talk about who it’s for, and what role you had to play. It should relate to the image above.
+  </p><a href="#web">View Our Web Portfolio</a>
+</div>
+<div class="grid_4">
+  <h2 class="sifr-subtitle">
+    WORK WITH US
+  </h2>
+  <p>
+    We would love to work on one of your projects. If you have a job you think we would be right for, please contact us. If you have any questions or comments we have a handy contact form, or you can telephone us today! We will make it a priority to get back to you within 24 hours.
+  </p>
+</div><!-- end Home Section -->
+<div class="divider">
+  &nbsp;<a id="blog" name="button_web"></a>
+</div>
+<!-- Web Section -->
+<div class="grid_8 prefix_3">
+  <h1 class="sifr-title">
+    We Make Hand Crafted <em>user friendly</em> websites and we <em>love it</em>.
+  </h1>
+</div>
+{% assign post = site.posts.first %}
+<div class="grid_4 prefix_3">
+  <!-- RECENT WORK IMAGE-->
+  <a href="#"><img src="{{post.image}}" alt="Portfolio Item 1" /></a>
+</div><!-- end .grid_6 -->
+<div class="grid_4">
+  <h2 class="sifr-subtitle">
+    {{post.title}} 
+  </h2>
+  {{post.content}}
+  <br />
+  <p>
+    <a class="button_visit" href="{{post.id}}">Read More</a>
+  </p>
+</div>
+
+<!-- end Web Section -->
+<div class="clear">
+  &nbsp;
+</div>
+
+<div class="divider">
+  &nbsp;<a id="contactus" name="contactus"></a>
+</div>
+<!-- Contact Section -->
+<div class="grid_8 prefix_3">
+  <h1 class="sifr-title">
+    We Would Love to <em>Work With You!</em> Please Contact Us Today.
+  </h1>
+</div>
+<div class="grid_4 prefix_3">
+
+  <h2 class="sifr-subtitle">
+    CONTACT ME
+  </h2>
+  <p>
+    If you have a project you would like to talk about, please contact us using our contact form. Fields marked with * are required.
+  </p>
+  <p>
+    You can also follow me on <a href="https://twitter.com/jaboza">twitter</a>, call me +506 8847-6116 or email me <a href="mailto:jose(at)ticooonrails(dot)com">jose(at)ticooonrails(dot)com</a>.
+  </p>
+  <form id="form3" name="form3" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+action="https://ticoonrails.wufoo.com/forms/q7x3q7/#public">
+    <input type="hidden" id="idstamp" name="idstamp" value="grUX5hUnn3C5KGys6IQODcrpn53MFt4IEgQYx6srlmQ=" />
+    <ul>
+
+      <li>
+        <input onfocus="this.value=''" id="Field1" name="Field1" type="text" class="name field text medium" value="Name or Company*" maxlength="255" tabindex="1" required />
+      </li>
+      <li>
+        <input onfocus="this.value=''" id="Field2" name="Field2" type="email" spellcheck="false" class="email field text medium" maxlength="255" tabindex="2"  value="Email Address*" required />
+      </li>
+      <li>
+        <input onfocus="this.value=''" id="Field4" name="Field4" type="text" class="phone field text medium" maxlength="255" tabindex="3" onkeyup="" value="Phone Number" />
+      </li>
+      <li>
+        <textarea id="Field6" 
+        name="Field6" 
+        class="message field textarea medium" 
+        spellcheck="true" 
+        rows="10" cols="50" 
+        tabindex="4" 
+        onkeyup=""
+        required  ></textarea>
+      </li>
+      <li>
+        <input class="button" type="submit" value="Send" />
+      </li>
+    </ul>
+  </form>
+</div>
+<div class="grid_4">
+  <h2 class="sifr-subtitle">
+    WHERE AM I
+  </h2>
+  <p>
+    I'm in paradise, I mean, Costa Rica! :)
+  </p>
+  <div id="map"></div>
+</div>
+<!-- end Contact Section -->

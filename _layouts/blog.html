@@ -12,21 +12,6 @@
 <!-- Google Maps Script -->   
     <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAATMr2p5NfpUtAozRTkj_AnRQwudiEu5QiQ0ZwlXGo1DIvDbNPthRk4QnnyJqdx61H_hk_6Pq_liggtA" type="text/javascript">
 </script>
-
-<!-- End Google Maps Script --> 
-
-    <script src="/assets/js/jquery.js" type="text/javascript">
-</script>
-    <script src="/assets/js/sifr.js" type="text/javascript">
-</script>
-    <script src="/assets/js/sifr-config.js" type="text/javascript">
-</script>
-    <script src="/assets/js/scroll.js" type="text/javascript">
-</script><!--[if lt IE 7]>
-    <script type="text/javascript" src="js/unitpngfix.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/ieonly.css" />
-<![endif]-->
-
     <script type="text/javascript">
 //<![CDATA[
 
@@ -40,18 +25,22 @@
     }
     }
 
-    $(function() {
-      $('a[href^="mailto:"]').each(function() {
-      this.href = this.href.replace('(at)', '@').replace(/\(dot\)/g, '.');
-      // Remove this line if you don't want to set the email address as link text:
-      this.innerHTML = this.href.replace('mailto:', '');
-      });
-    });
-
     //]]>
     </script>
     
+<!-- End Google Maps Script --> 
 
+    <script src="/assets/js/jquery.js" type="text/javascript">
+</script>
+    <script src="/assets/js/sifr.js" type="text/javascript">
+</script>
+    <script src="/assets/js/sifr-config.js" type="text/javascript">
+</script>
+    <script src="/assets/js/scroll.js" type="text/javascript">
+</script><!--[if lt IE 7]>
+    <script type="text/javascript" src="js/unitpngfix.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ieonly.css" />
+<![endif]-->
   </head>
   <body id="home" onload="load()" onunload="GUnload()">
     <div class="container_12">
@@ -72,15 +61,15 @@
             <a href="#home">Jose Boza - Ruby on Rails developer in Costa Rica</a>
           </h1>
           <p>
-            San José, Costa Rica. <a href="mailto:jose(at)ticooonrails(dot)com">jose(at)ticooonrails(dot)com</a>
+            San José, Costa Rica. <a href="mailto:jose@ticooonrails.com">jose@ticoonrails.com</a>
           </p>
           <!-- Navigation -->
           <ul class="navigation">
             <li>
-              <a class="button_web" href="#home">About Me</a>
+              <a class="button_web" href="/">Home</a>
             </li>
             <li>
-              <a class="button_print" href="#blog">Blog</a>
+              <a class="button_print" href="/blog">Archive</a>
             </li>
             <li>
               <a class="button_contact" href="#contactus">Contact Me</a>
@@ -89,7 +78,12 @@
           <!-- end Navigation-->
         </div>
       </div><!-- end sidebar -->
-      {{content}}
+      <div class="grid_8 prefix_3">
+        <h1 class="sifr-title">
+          {{page.page_title}}
+        </h1>
+        {{content}}
+      </div>
       <!-- Footer-->
       <div class="grid_8 prefix_3 alpha foot">
         <p class="footerleft">

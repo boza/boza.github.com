@@ -1,1 +1,113 @@
-<p>Hello!</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>
+      Hello World :: Just a Ruby Developer in Costa Rica 
+    </title>
+    <link rel="stylesheet" type="text/css" media="all" href="/assets/css/style.css" />
+    
+    
+<!-- Google Maps Script -->   
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAATMr2p5NfpUtAozRTkj_AnRQwudiEu5QiQ0ZwlXGo1DIvDbNPthRk4QnnyJqdx61H_hk_6Pq_liggtA" type="text/javascript">
+</script>
+    <script type="text/javascript">
+//<![CDATA[
+
+    function load() {
+    if (GBrowserIsCompatible()) {
+    var map = new GMap2(document.getElementById("map"));
+    map.setCenter(new GLatLng(9.957142,-84.053671), 15);
+    var marker = new GMarker(new GLatLng(9.957142,-84.053671));
+    map.addOverlay(marker);
+    map.addControl(new GSmallMapControl());
+    }
+    }
+
+    //]]>
+    </script>
+    
+<!-- End Google Maps Script --> 
+
+    <script src="/assets/js/jquery.js" type="text/javascript">
+</script>
+    <script src="/assets/js/sifr.js" type="text/javascript">
+</script>
+    <script src="/assets/js/sifr-config.js" type="text/javascript">
+</script>
+    <script src="/assets/js/scroll.js" type="text/javascript">
+</script><!--[if lt IE 7]>
+    <script type="text/javascript" src="js/unitpngfix.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ieonly.css" />
+<![endif]-->
+  </head>
+  <body id="home" onload="load()" onunload="GUnload()">
+    <div class="container_12">
+    
+    <!-- Divs for fading effect at top & bottom --> 
+      <div class="topfade">
+        &nbsp;
+      </div>
+      <div class="bottomfade">
+        &nbsp;
+      </div>
+    <!-- End divs for fading effect at top & bottom -->   
+      <div class="grid_2 prefix_1 sidebar">
+      
+      <!-- Sidebar containing logo & navigation --> 
+        <div id="sidebar">
+          <h1 class="logo">
+            <a href="#home">Jose Boza - Ruby on Rails developer in Costa Rica</a>
+          </h1>
+          <p>
+            San José, Costa Rica. <a href="mailto:jose@ticooonrails.com">jose@ticoonrails.com</a>
+          </p>
+          <!-- Navigation -->
+          <ul class="navigation">
+            <li>
+              <a class="button_web" href="/">Home</a>
+            </li>
+            <li>
+              <a class="button_print" href="/blog">Archive</a>
+            </li>
+            <li>
+              <a class="button_contact" href="#contactus">Contact Me</a>
+            </li>
+          </ul>
+          <!-- end Navigation-->
+        </div>
+      </div><!-- end sidebar -->
+      <div class="grid_8 prefix_3">
+        <h1 class="sifr-title">
+          Hello <em>World</em>
+        </h1>
+        <p>Now is the time for all good men to come to the aid of their country. This is just a regular paragraph.</p>
+
+<p>The quick brown fox jumped over the lazy dog&#8217;s back.</p>
+
+<h3 id='header_3'>Header 3</h3>
+
+<blockquote>
+<p>This is a blockquote.</p>
+
+<p>This is the second paragraph in the blockquote.</p>
+
+<h2 id='this_is_an_h2_in_a_blockquote'>This is an H2 in a blockquote</h2>
+</blockquote>
+      </div>
+      <!-- Footer-->
+      <div class="grid_8 prefix_3 alpha foot">
+        <p class="footerleft">
+          Minimo portfolio template by <a href="http://www.pixelcraft.ie">Pixelcraft</a>.
+        </p>
+        <p class="footerright">
+          <a href="http://validator.w3.org/check?uri=referer">Valid xHTML</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS 3</a>
+        </p>
+      </div><!-- end Footer-->
+      <div class="divider">
+        &nbsp;<a id="contact" name="contact"></a>
+      </div>
+    </div><!-- end .container_12 -->
+  </body>
+</html>

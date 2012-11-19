@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>
+      Jose Boza :: Just a Ruby Developer in Costa Rica 
+    </title>
+    <link rel="stylesheet" type="text/css" media="all" href="/assets/css/style.css" />
+    
+    
+<!-- Google Maps Script -->   
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAATMr2p5NfpUtAozRTkj_AnRQwudiEu5QiQ0ZwlXGo1DIvDbNPthRk4QnnyJqdx61H_hk_6Pq_liggtA" type="text/javascript">
+</script>
+
+<!-- End Google Maps Script --> 
+
+    <script src="/assets/js/jquery.js" type="text/javascript">
+</script>
+    <script src="/assets/js/sifr.js" type="text/javascript">
+</script>
+    <script src="/assets/js/sifr-config.js" type="text/javascript">
+</script>
+    <script src="/assets/js/scroll.js" type="text/javascript">
+</script><!--[if lt IE 7]>
+    <script type="text/javascript" src="js/unitpngfix.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ieonly.css" />
+<![endif]-->
+
+    <script type="text/javascript">
+//<![CDATA[
+
+    function load() {
+    if (GBrowserIsCompatible()) {
+    var map = new GMap2(document.getElementById("map"));
+    map.setCenter(new GLatLng(9.957142,-84.053671), 15);
+    var marker = new GMarker(new GLatLng(9.957142,-84.053671));
+    map.addOverlay(marker);
+    map.addControl(new GSmallMapControl());
+    }
+    }
+
+    $(function() {
+      $('a[href^="mailto:"]').each(function() {
+      this.href = this.href.replace('(at)', '@').replace(/\(dot\)/g, '.');
+      // Remove this line if you don't want to set the email address as link text:
+      this.innerHTML = this.href.replace('mailto:', '');
+      });
+    });
+
+    //]]>
+    </script>
+    
+
+  </head>
+  <body id="home" onload="load()" onunload="GUnload()">
+    <div class="container_12">
+    
+    <!-- Divs for fading effect at top & bottom --> 
+      <div class="topfade">
+        &nbsp;
+      </div>
+      <div class="bottomfade">
+        &nbsp;
+      </div>
+    <!-- End divs for fading effect at top & bottom -->   
+      <div class="grid_2 prefix_1 sidebar">
+      
+      <!-- Sidebar containing logo & navigation --> 
+        <div id="sidebar">
+          <h1 class="logo">
+            <a href="#home">Jose Boza - Ruby on Rails developer in Costa Rica</a>
+          </h1>
+          <p>
+            San José, Costa Rica. <a href="mailto:jose(at)ticooonrails(dot)com">jose(at)ticooonrails(dot)com</a>
+          </p>
+          <!-- Navigation -->
+          <ul class="navigation">
+            <li>
+              <a class="button_web" href="#home">About Me</a>
+            </li>
+            <li>
+              <a class="button_print" href="#blog">Blog</a>
+            </li>
+            <li>
+              <a class="button_contact" href="#contactus">Contact Me</a>
+            </li>
+          </ul>
+          <!-- end Navigation-->
+        </div>
+      </div><!-- end sidebar -->
+      <div class="grid_8 prefix_3">
+<!-- Home Section --> 
+  <h1 class="sifr-title">
+    Designing User Experiences, One site at a time - <em>with a smile :)</em>
+  </h1>
+</div>
+<div class="grid_4 prefix_3">
+  <a href="#"><img src="./img/recent_work.png" alt="Recently Completed Work Image" /></a>
+</div>
+<div class="grid_4">
+  <h2 class="sifr-subtitle">
+    A BIT ABOUT M
+  </h2>
+  <p>
+    This is a short paragraph about what our company does. We can include information like famous clients, or where we work from, and the services we offer, maybe even with a link to the extensive <a href="#web">web site</a> or <a href="#print">print</a> portfolio. Oh, and don’t forget an easy to reach <a href="#contactus">contact us</a> link.
+  </p>
+  <h2 class="sifr-subtitle">
+    WHAT OUR CLIENTS SAY
+  </h2>
+  <p>
+    “The studio were excellent in communicating their ideas to us. We put our trust in them, and they did not dissappoint. I would highly recommend working with this design studio.” <em>- John Johnson, CEO Johnson Corp.</em>
+  </p>
+</div>
+<div class="clear">
+  &nbsp;
+</div>
+<div class="grid_4 prefix_3">
+  <h2 class="sifr-subtitle">
+    RECENTLY COMPLETED
+  </h2>
+  <p>
+    This is an area on the landing page where you can give a brief summary on some recent work that you have completed. Talk about who it’s for, and what role you had to play. It should relate to the image above.
+  </p><a href="#web">View Our Web Portfolio</a>
+</div>
+<div class="grid_4">
+  <h2 class="sifr-subtitle">
+    WORK WITH US
+  </h2>
+  <p>
+    We would love to work on one of your projects. If you have a job you think we would be right for, please contact us. If you have any questions or comments we have a handy contact form, or you can telephone us today! We will make it a priority to get back to you within 24 hours.
+  </p>
+</div><!-- end Home Section -->
+<div class="divider">
+  &nbsp;<a id="blog" name="button_web"></a>
+</div>
+<!-- Web Section -->
+<div class="grid_8 prefix_3">
+  <h1 class="sifr-title">
+    We Make Hand Crafted <em>user friendly</em> websites and we <em>love it</em>.
+  </h1>
+</div>
+
+<div class="grid_4 prefix_3">
+  <!-- RECENT WORK IMAGE-->
+  <a href="#"><img src="/assets/img/item_01.png" alt="Portfolio Item 1" /></a>
+</div><!-- end .grid_6 -->
+<div class="grid_4">
+  <h2 class="sifr-subtitle">
+    Hello World 
+  </h2>
+  <p>Now is the time for all good men to come to the aid of their country. This is just a regular paragraph.</p>
+
+<p>The quick brown fox jumped over the lazy dog&#8217;s back.</p>
+
+<h3 id='header_3'>Header 3</h3>
+
+<blockquote>
+<p>This is a blockquote.</p>
+
+<p>This is the second paragraph in the blockquote.</p>
+
+<h2 id='this_is_an_h2_in_a_blockquote'>This is an H2 in a blockquote</h2>
+</blockquote>
+  <br />
+  <p>
+    <a class="button_visit" href="/blog/lessons/hello-world">Read More</a>
+  </p>
+</div>
+
+<!-- end Web Section -->
+<div class="clear">
+  &nbsp;
+</div>
+
+<div class="divider">
+  &nbsp;<a id="contactus" name="contactus"></a>
+</div>
+<!-- Contact Section -->
+<div class="grid_8 prefix_3">
+  <h1 class="sifr-title">
+    We Would Love to <em>Work With You!</em> Please Contact Us Today.
+  </h1>
+</div>
+<div class="grid_4 prefix_3">
+
+  <h2 class="sifr-subtitle">
+    CONTACT ME
+  </h2>
+  <p>
+    If you have a project you would like to talk about, please contact us using our contact form. Fields marked with * are required.
+  </p>
+  <p>
+    You can also follow me on <a href="https://twitter.com/jaboza">twitter</a>, call me +506 8847-6116 or email me <a href="mailto:jose(at)ticooonrails(dot)com">jose(at)ticooonrails(dot)com</a>.
+  </p>
+  <form id="form3" name="form3" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+action="https://ticoonrails.wufoo.com/forms/q7x3q7/#public">
+    <input type="hidden" id="idstamp" name="idstamp" value="grUX5hUnn3C5KGys6IQODcrpn53MFt4IEgQYx6srlmQ=" />
+    <ul>
+
+      <li>
+        <input onfocus="this.value=''" id="Field1" name="Field1" type="text" class="name field text medium" value="Name or Company*" maxlength="255" tabindex="1" required />
+      </li>
+      <li>
+        <input onfocus="this.value=''" id="Field2" name="Field2" type="email" spellcheck="false" class="email field text medium" maxlength="255" tabindex="2"  value="Email Address*" required />
+      </li>
+      <li>
+        <input onfocus="this.value=''" id="Field4" name="Field4" type="text" class="phone field text medium" maxlength="255" tabindex="3" onkeyup="" value="Phone Number" />
+      </li>
+      <li>
+        <textarea id="Field6" 
+        name="Field6" 
+        class="message field textarea medium" 
+        spellcheck="true" 
+        rows="10" cols="50" 
+        tabindex="4" 
+        onkeyup=""
+        required  ></textarea>
+      </li>
+      <li>
+        <input class="button" type="submit" value="Send" />
+      </li>
+    </ul>
+  </form>
+</div>
+<div class="grid_4">
+  <h2 class="sifr-subtitle">
+    WHERE AM I
+  </h2>
+  <p>
+    I'm in paradise, I mean, Costa Rica! :)
+  </p>
+  <div id="map"></div>
+</div>
+<!-- end Contact Section -->
+      <!-- Footer-->
+      <div class="grid_8 prefix_3 alpha foot">
+        <p class="footerleft">
+          Minimo portfolio template by <a href="http://www.pixelcraft.ie">Pixelcraft</a>.
+        </p>
+        <p class="footerright">
+          <a href="http://validator.w3.org/check?uri=referer">Valid xHTML</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS 3</a>
+        </p>
+      </div><!-- end Footer-->
+      <div class="divider">
+        &nbsp;<a id="contact" name="contact"></a>
+      </div>
+    </div><!-- end .container_12 -->
+  </body>
+</html>
