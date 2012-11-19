@@ -420,4 +420,8 @@ resize: none;
 background: url(../img/textarea.png) no-repeat -300px 0;
 }
 
+.sifr-subtitle, .sifr-title{
+	position: relative;
+}
+
 /* @end */
