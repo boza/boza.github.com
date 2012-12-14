@@ -3,7 +3,7 @@ title :  Hello World
 page_title :  Hello <em>World</em>
 categories : lessons
 layout: blog
-image: /assets/img/item_01.png
+image: /assets/img/ruby.png
 ---
 
 Now is the time for all good men to come to
