@@ -47,21 +47,27 @@ title: Jose Boza
   </h1>
 </div>
 {% assign post = site.posts.first %}
+{% if post %}
+  <div class="grid_4 prefix_3">
+    <!-- RECENT WORK IMAGE-->
+    <a href="{{post.id}}"><img src="{{post.image}}" alt="Portfolio Item 1" /></a>
+  </div><!-- end .grid_6 -->
+  <div class="grid_4">
+    <h2 class="sifr-subtitle">
+      <a href="{{post.id}}">{{post.title}}</a>
+    </h2>
+    <p>{{post.excerpt}}</p>
+    <br />
+    <p>
+      <a class="button_visit" href="{{post.id}}">Read More</a>
+    </p>
+  </div>
+{% else %}
 <div class="grid_4 prefix_3">
-  <!-- RECENT WORK IMAGE-->
-  <a href="{{post.id}}"><img src="{{post.image}}" alt="Portfolio Item 1" /></a>
-</div><!-- end .grid_6 -->
-<div class="grid_4">
-  <h2 class="sifr-subtitle">
-    {{post.title}} 
-  </h2>
-  {{post.content}}
-  <br />
-  <p>
-    <a class="button_visit" href="{{post.id}}">Read More</a>
-  </p>
-</div>
-
+    <!-- RECENT WORK IMAGE-->
+    <p>I'm working on some blog posts, come back later and check them out</p>
+  </div><!-- end .grid_6 -->  
+{% endif %}
 <!-- end Web Section -->
 <div class="clear">
   &nbsp;

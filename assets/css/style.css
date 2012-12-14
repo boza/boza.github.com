@@ -6,7 +6,7 @@
 /* @group General Styling */
 
 body {
-background: #fff;
+background: #fff; d
 color: #8c8c8c;
 padding-top: 40px;
 text-shadow: #e8e8e8 1px 1px 0;
@@ -422,6 +422,11 @@ background: url(../img/textarea.png) no-repeat -300px 0;
 
 .sifr-subtitle, .sifr-title{
 	position: relative;
+}
+
+.content img {
+	float:left;
+	margin: 0 15px 15px 0;
 }
 
 /* @end */
